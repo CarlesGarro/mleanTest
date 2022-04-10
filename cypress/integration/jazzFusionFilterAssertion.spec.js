@@ -1,8 +1,8 @@
 var i = 0;
 for (i = 0; i < 3; i++) {
 
-  describe("test mlean cypress", () => {
-    it("navigate to charts and filter by jazz fusion", () => {
+  describe("Jazz Fusion genre filter", () => {
+    it("navigate to charts and filter by Jazz Fusion and all time best music", () => {
 
       cy.navigateToCharts()
 

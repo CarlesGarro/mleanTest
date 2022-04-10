@@ -1,7 +1,7 @@
 var i = 0;
 for (i = 0; i < 3; i++) {
-  describe("test mlean cypress", () => {
-    it("navigate to charts and filter by 70's music", () => {
+  describe("70s music Filter", () => {
+    it("navigate to charts, filter by 70's music and assert the first 10 items", () => {
 
       cy.navigateToCharts()
 
