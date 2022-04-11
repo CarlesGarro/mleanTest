@@ -7,7 +7,16 @@ Cypress.Commands.add("navigateToCharts", () => {
 
     cy.url().should('include', 'music')
 
-    cy.get('[class="fc-button-label"]').contains('Consent').click()
+    cy.get("body").then(body => {
+        const hasClass = body[0].querySelectorAll(".fc-button-label")
+        if (hasClass.length > 0) {
+            cy.get('[class="fc-button-label"]').contains('Consent').click()
+        } else {
+            cy.log('consent cookies modal does not appear')
+        }
+    })
+
+
 
     cy.wait('@closeCookiesLayer')
 
