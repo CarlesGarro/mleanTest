@@ -1,5 +1,5 @@
 describe("Jazz Fusion genre filter", () => {
-  it("navigate to charts and filter by Jazz Fusion and all time best music", () => {
+  it.skip("navigate to charts and filter by Jazz Fusion and all time best music", () => {
 
     cy.navigateToCharts()
 
