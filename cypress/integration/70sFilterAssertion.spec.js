@@ -1,4 +1,3 @@
-for (let x = 0; x < 5; x++) {
 describe("70s music Filter", () => {
   it("navigate to charts, filter by 70's music and assert the first 10 items", () => {
 
@@ -30,4 +29,4 @@ describe("70s music Filter", () => {
 
   })
 })
-}
+
